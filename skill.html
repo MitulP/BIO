@@ -11,6 +11,104 @@
 
 <!-- Web-Fonts -->
 <link href="//fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+<style type="text/css">
+    /*@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';*/
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 0;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  height: 40px;
+  margin: auto;
+  font-size: 0;
+  text-align: center;
+  position: absolute;
+  top: 170 ;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.99;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 12%;
+  height: 12%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+</style>
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -154,59 +252,15 @@
  -->	</article>
 </aside><!-- /#featured -->
 
-<section id="extras" class="body">
-	<div class="blogroll">
-		<h2>Recommended</h2>
-		<ul>
-			<li><a href="http://onelab.mit.edu" rel="external">MIT ONE Lab</a></li>
-			<li><a href="https://350.org" rel="external">350.org</a></li>
-			<li><a href="https://citizensclimatelobby.org/" rel="external">CCL</a></li>
-
-			<!-- <li><a href="http://www.intel.com" rel="external">Intel</a></li> -->
-			<!-- <li><a href="http://www.kiva.org" rel="external">Kiva</a></li> -->
-			<!-- <li><a href="http://www.mendeley.com" rel="external">Mendeley</a></li> -->
-
-			<!-- <li><a href="http://www.mapmyrun.com" rel="external">MapMyRun</a></li> -->
-			<!-- <li><a href="http://www.khanacademy.org" rel="external">Khan Academy</a></li> -->
-			<!-- <li><a href="http://www.goodreads.com" rel="external">GoodReads</a></li> -->
-			<li><a href="http://www.coalmap.com" rel="external">CoalMap</a></li>
-
-			<!-- <li><a href="https://openpv.nrel.gov/" rel="external">OpenPV</a></li> -->
-			<li><a href="http://pveducation.org/pvcdrom" rel="external">PVCDROM</a></li>
-			<!-- <li><a href="http://pvwatts.nrel.gov/" rel="external">PVWatts</a></li> -->
-			<!-- <li><a href="http://rredc.nrel.gov/solar/old_data/nsrdb/" rel="external">NSRDB</a></li> -->
-			
-			<li><a href="http://www.skepticalscience.com/" rel="external">Skeptical Science</a></li>
-			<li><a href="http://www.withouthotair.com/" rel="external">Sustainable Energy</a></li>			
-
-			<li><a href="http://www.phdcomics.com" rel="external">PhD Comics</a></li>
-			<li><a href="http://xkcd.com" rel="external">xkcd</a></li>
-			<!-- <li><a href="http://tocrofl.tumblr.com/" rel="external">TOC ROFL</a></li>			 -->
-			<!-- <li><a href="http://www.tripit.com" rel="external">TripIt</a></li> -->
-
-			<li><a href="https://paperpile.com" rel="external">Paperpile</a></li>
-			<li><a href="https://immersion.media.mit.edu/" rel="external">Immersion</a></li>
-			<li><a href="https://letsgaze.com/#/" rel="external">Gaze</a></li>
-		</ul>
-	</div><!-- /.blogroll -->
-	
-	<div class="social">
-		<h2>Find me!</h2>
-		<ul>
-			<!-- <li><a href="mailto:jjean@mit.edu" rel="me">Email</a></li> -->
-			<li><a href="https://scholar.google.com/citations?user=zN-WJs4AAAAJ&amp;hl=en" rel="me">Google Scholar</a></li>		
-			<li><a href="http://www.linkedin.com/in/joeljean" rel="me">LinkedIn</a></li>
-			<li><a href="http://joeljean.wordpress.com" rel="me">WordPress</a></li>
-			<li><a href="http://www.quora.com/Joel-Jean" rel="me">Quora</a></li>
-			<li><a href="http://www.facebook.com/joel.jean" rel="me">Facebook</a></li>
-			<!-- <li><a href="http://flavors.me/joeljean" rel="me">Flavors.me</a></li> -->
-			<!-- <li><a href="https://plus.google.com/+JoelJean" rel="me">Google+</a></li> -->
-		</ul>
-	</div><!-- /.social -->
-</section><!-- /#extras -->
-
+<div class="social-btns">
+<a class="btn facebook" href="https://www.facebook.com/modasawala"><i class="fa fa-facebook"></i></a>
+<a class="btn twitter" href="https://twitter.com/Mitul_N_Panchal"><i class="fa fa-twitter"></i></a>
+<a class="btn google" href="https://plus.google.com/112389319886812204094"><i class="fa fa-google"></i></a>
+<a class="btn linkedin" href="https://www.linkedin.com/in/mitul-panchal/"><i class="fa fa-linkedin"></i></a>
+<a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+</div>
 <footer id="contentinfo" class="body">
-	<p>© 2011–2017 <a href="index.html" rel="me">Joel Jean</a></p>
+	<p>© 2014–2017 <a href="index.html" rel="me">Mitul Panchal</a></p>
 </footer><!-- /#contentinfo -->
 
 
