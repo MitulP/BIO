@@ -15,9 +15,9 @@ sub {font-size:xx-small; vertical-align:sub;}
 /*** Global ***/
 /* Body */
 body {
-	background: #F1F1FF url("../images/bg.png") no-repeat;
+	background: #F1F1FF url("") no-repeat;
 	color: #000204;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;/*Helvetica, Arial, Verdana, sans-serif;*/
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", Arial, "Lucida Grande", sans-serif;/*Helvetica, Arial, Verdana, sans-serif;*/
 	font-size: 87.5%; /* base font = 14px*/
 	font-weight: 300;
 	line-height: 1.429; /* 1.429*current font size = 20px */
@@ -155,7 +155,7 @@ img.left, figure.left {float: left; margin: 0 0 2em 2em;}
 #banner nav a:link, #banner nav a:visited {
 	color: #FFF;
 	display: inline-block;
-	height: 40px;
+	height: 30px;
 	padding: 5px 1.5em;
 	text-decoration: none;
 }
