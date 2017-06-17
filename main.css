@@ -155,7 +155,7 @@ img.left, figure.left {float: left; margin: 0 0 2em 2em;}
 #banner nav a:link, #banner nav a:visited {
 	color: #FFF;
 	display: inline-block;
-	height: 30px;
+	height: 40px;
 	padding: 5px 1.5em;
 	text-decoration: none;
 }
